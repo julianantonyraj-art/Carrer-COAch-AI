@@ -1,9 +1,8 @@
 import streamlit as st
 import google.generativeai as genai
-
 # Configure API
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-1.5-flash-8b")
 
 # Page setup
 st.set_page_config(page_title="CareerCoach AI", page_icon="🚀")
